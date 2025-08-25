@@ -49,11 +49,11 @@ Algumas das variáveis mais importantes para análises de IA:
 - `cholesterol` e frações (`HDL`, `LDL`) → perfil lipídico.
 - `heart_disease` → variável alvo para classificação.
 
-### Link Público
+### Link
 Os dados numéricos estão na seguinte pasta:  
-[cardioIA_fase1_dados_numericos.csv](data/cardioIA_fase1_dados_numericos.csv)
-[cardioIA_fase1_dicionario_dados.csv](data/cardioIA_fase1_dicionario_dados.csv)
-[data_dictionary.md](data/data_dictionary.md)
+- [cardioIA_fase1_dados_numericos.csv](data/cardioIA_fase1_dados_numericos.csv)
+- [cardioIA_fase1_dicionario_dados.csv](data/cardioIA_fase1_dicionario_dados.csv)
+- [data_dictionary.md](data/data_dictionary.md)
 
 ---
 
@@ -71,9 +71,9 @@ Textos relacionados a doenças cardiovasculares, sintomas e tratamentos foram ob
 - Extração de sintomas e termos médicos para NLP.  
 - Classificação de tópicos e identificação de padrões clínicos.  
 
-### Link Público
-[Análise do Conceito de Risco Cardiovascular.txt](docs/texts/Análise do Conceito de Risco Cardiovascular.txt)  
-[Importância da Educação Para Prevenção Cardiovascular.txt](docs/texts/Importância da Educação Para Prevenção Cardiovascular.txt)
+### Link
+- [Análise do Conceito de Risco Cardiovascular.txt](docs/texts/Análise_do_Conceito_de_Risco_Cardiovascular.txt)
+- [Importância da Educação Para Prevenção Cardiovascular.txt](docs/texts/Importância_da_Educação_Para_Prevenção_Cardiovascular.txt)
 
 ---
 
@@ -94,7 +94,7 @@ Essas imagens serão utilizadas para:
 - **Classificação visual**: separar exames normais de patológicos.
 - **Treinamento de modelos de Visão Computacional**: segmentação, reconhecimento de bordas e padrões cardíacos.
 
-### Links Públicos
+### Link Público
 As 100 imagens selecionadas estão hospedadas no OneDrive para acesso público:  
 [Link para as imagens](https://1drv.ms/f/c/4140def327662c57/Eo1w_440ba9Ji5yxbjA3OaMBcHYAXzinhSodTjx_KdMNvg?e=zqdb3A)
 
