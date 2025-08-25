@@ -48,9 +48,10 @@ Algumas das variáveis mais importantes para análises de IA:
 - `heart_disease` → variável alvo para classificação.
 
 ### Link Público
-Os dados numéricos estão hospedados em:  
-[cardioIA_fase1_dados_numericos.csv](COLE_SEU_LINK_DO_DRIVE)  
-[cardioIA_fase1_dicionario_dados.csv](COLE_SEU_LINK_DO_DRIVE)
+Os dados numéricos estão na seguinte pasta:  
+[cardioIA_fase1_dados_numericos.csv](data/cardioIA_fase1_dados_numericos.csv)
+[cardioIA_fase1_dicionario_dados.csv](data/cardioIA_fase1_dicionario_dados.csv)
+[data_dictionary.md](data/data_dictionary.md)
 
 ---
 
@@ -69,8 +70,8 @@ Textos relacionados a doenças cardiovasculares, sintomas e tratamentos foram ob
 - Classificação de tópicos e identificação de padrões clínicos.  
 
 ### Link Público
-[texto1.txt](COLE_SEU_LINK_DO_DRIVE)  
-[texto2.txt](COLE_SEU_LINK_DO_DRIVE)
+[Análise do Conceito de Risco Cardiovascular.txt](docs/texts/Análise do Conceito de Risco Cardiovascular.txt)  
+[Importância da Educação Para Prevenção Cardiovascular.txt](docs/texts/Importância da Educação Para Prevenção Cardiovascular.txt)
 
 ---
 
@@ -82,10 +83,6 @@ Para esta fase do projeto, utilizamos o **Heart Dataset** disponibilizado no [Me
 ### Processamento e Conversão
 - Cada arquivo `.nii.gz` representa um exame volumétrico.
 - Extraímos a **fatia central** de cada volume para gerar imagens 2D em escala de cinza.
-- As imagens foram organizadas em:
-
-assets/images/xray/
-
 - Para fins do projeto, selecionamos **100 imagens** representativas do conjunto convertido, garantindo diversidade entre exames normais e patológicos.
 - Renomeadas sequencialmente de `xray_001.png` até `xray_100.png`.
 
@@ -96,12 +93,10 @@ Essas imagens serão utilizadas para:
 - **Treinamento de modelos de Visão Computacional**: segmentação, reconhecimento de bordas e padrões cardíacos.
 
 ### Links Públicos
-As 100 imagens selecionadas estão hospedadas no Google Drive/OneDrive para acesso público:  
-[Link para as imagens](COLE_AQUI_O_LINK_DO_DRIVE)
-
+As 100 imagens selecionadas estão hospedadas no OneDrive para acesso público:  
+[Link para as imagens](https://1drv.ms/f/c/4140def327662c57/Eo1w_440ba9Ji5yxbjA3OaMBcHYAXzinhSodTjx_KdMNvg?e=zqdb3A)
 
 ---
-
 
 ## Observações Finais
 Esta fase do projeto tem como objetivo **construir a base de dados para o CardioIA**, garantindo relevância clínica e diversidade nos dados.  
@@ -109,16 +104,23 @@ Os datasets foram preparados considerando princípios de **Governança de Dados*
 
 ## Organização do Repositório
 
-CardioIA/
-│
-├─ assets/
-│ ├─ images/xray/ # 100 imagens de raio-X
-│ └─ docs/ # textos .txt
-│
-├─ cardioIA_fase1_dados_numericos.csv
-├─ cardioIA_fase1_dicionario_dados.csv
-└─ README.md
-
+cardioia-fase1/
+├─ README.md
+├─ data/
+│ ├─ cardioIA_fase1_dados_numericos.csv
+│ ├─ cardioIA_fase1_dicionario_dados.csv
+│ └─ data_dictionary.md
+├─ docs/
+│ ├─ texts/
+│ │ ├─ Análise do Conceito de Risco Cardiovascular.txt
+│ │ └─ Importância da Educação Para Prevenção Cardiovascular.txt
+│ └─ governance/
+│ └─ data_governance_notes.md
+├─ scripts/
+│ ├─ generate_numeric_dataset.py
+│ └─ validate_dataset.py
+└─ assets/
+│ └─ logo-fiap.png
 
 ---
 
