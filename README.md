@@ -26,46 +26,101 @@
 ## 📜 Descrição
 
 ### CardioIA – Fase 1: Batimentos de Dados ###
-Este repositório reúne **dados numéricos, textuais e visuais** que serão usados nas próximas fases do projeto **CardioIA** (triagem, diagnóstico, monitoramento e previsão). O foco é garantir **qualidade**, **governança** e **relevância clínica** desde o início.
+Este projeto acadêmico do curso de IA inovador tem como objetivo construir uma plataforma digital inteligente que simula o ecossistema de uma cardiologia moderna.  
+Nesta primeira fase, coletamos, organizamos e preparamos **três tipos de dados fundamentais**: numéricos, textuais e visuais, que serão utilizados nas fases seguintes para alimentar algoritmos de Inteligência Artificial.
+
+---
+
+## Parte 1 – Dados Numéricos (IoT)
+
+### Arquivos
+- `cardioIA_fase1_dados_numericos.csv` → dados de pacientes cardíacos.
+- `cardioIA_fase1_dicionario_dados.csv` → descrição e significado das variáveis.
+
+### Fonte
+Os dados foram **simulados** com base em parâmetros clínicos comuns, incluindo: idade, sexo, pressão arterial, colesterol, histórico de doenças cardíacas, frequência cardíaca, entre outros.
+
+### Variáveis Relevantes
+Algumas das variáveis mais importantes para análises de IA:
+- `age_years` → idade influencia risco cardíaco.
+- `systolic_bp_mmHg` e `diastolic_bp_mmHg` → pressão arterial.
+- `cholesterol` e frações (`HDL`, `LDL`) → perfil lipídico.
+- `heart_disease` → variável alvo para classificação.
+
+### Link Público
+Os dados numéricos estão hospedados em:  
+[cardioIA_fase1_dados_numericos.csv](COLE_SEU_LINK_DO_DRIVE)  
+[cardioIA_fase1_dicionario_dados.csv](COLE_SEU_LINK_DO_DRIVE)
+
+---
+
+## Parte 2 – Dados Textuais (NLP)
+
+### Arquivos
+- `Análise do Conceito de Risco Cardiovascular.txt`  
+- `Importância da Educação Para Prevenção Cardiovascular.txt`  
+
+### Fonte
+Textos relacionados a doenças cardiovasculares, sintomas e tratamentos foram obtidos de fontes acadêmicas e literatura clássica (SciELO, BVS, Projeto Gutenberg).
+
+### Uso em IA
+- Análise de sentimentos (ex.: percepção de pacientes sobre sintomas).  
+- Extração de sintomas e termos médicos para NLP.  
+- Classificação de tópicos e identificação de padrões clínicos.  
+
+### Link Público
+[texto1.txt](COLE_SEU_LINK_DO_DRIVE)  
+[texto2.txt](COLE_SEU_LINK_DO_DRIVE)
+
+---
+
+## Parte 3 – Dados Visuais (VC) – Raio-X de Tórax
+
+### Fonte das Imagens
+Para esta fase do projeto, utilizamos o **Heart Dataset** disponibilizado no [Mendeley Data](https://data.mendeley.com/datasets/czmn5ypdz5/1?utm_source=chatgpt.com), contendo exames de raio-X de tórax de pacientes. As imagens originais estão em formato `.nii.gz` (formato médico NIfTI) e foram convertidas para `.png` para facilitar o uso em análise de Visão Computacional.
+
+### Processamento e Conversão
+- Cada arquivo `.nii.gz` representa um exame volumétrico.
+- Extraímos a **fatia central** de cada volume para gerar imagens 2D em escala de cinza.
+- As imagens foram organizadas em:
+
+assets/images/xray/
+
+- Para fins do projeto, selecionamos **100 imagens** representativas do conjunto convertido, garantindo diversidade entre exames normais e patológicos.
+- Renomeadas sequencialmente de `xray_001.png` até `xray_100.png`.
+
+### Justificativa para Análise
+Essas imagens serão utilizadas para:
+- **Detecção de anomalias**: identificar alterações estruturais no coração e tórax.
+- **Classificação visual**: separar exames normais de patológicos.
+- **Treinamento de modelos de Visão Computacional**: segmentação, reconhecimento de bordas e padrões cardíacos.
+
+### Links Públicos
+As 100 imagens selecionadas estão hospedadas no Google Drive/OneDrive para acesso público:  
+[Link para as imagens](COLE_AQUI_O_LINK_DO_DRIVE)
 
 
-## 2) Estrutura dos Dados
-- **Numéricos (IoT/Clínicos simulados)**: `data/cardio_numeric_dataset.csv` e `.xlsx`
-- **Cópia pública**: [link público Drive/OneDrive]
-- **Dicionário de dados**: `data/data_dictionary.md`
-- **Origem**: dados **simulados** por script com distribuição realista e correlações clínicas plausíveis.
-- **Variáveis-chave (exemplos)**: idade, sexo, PA sistólica/diastólica, colesterol total, glicemia jejum, FC, IMC, tabagismo, histórico familiar, tipo de dor torácica, ECG de repouso, angina induzida por exercício, ST (oldpeak), inclinação do segmento ST, alvo (prob. doença cardíaca), etc.
-- **Justificativa clínica**: variáveis amplamente associadas a **risco cardiovascular** e **estratificação clínica**; úteis para modelos de IA (classificação/regressão, explicabilidade, score de risco).
+---
 
 
-- **Textuais (NLP)**: `docs/texts/`
-- **Arquivos**: pelo menos 2 `.txt` (ex.: material sobre doenças cardíacas, sintomas, diretrizes de saúde pública, trechos literários pertinentes).
-- **Cópia pública**: [link público Drive/OneDrive]
-- **Como explorar (NLP)**: análise de tópicos, extração de sintomas, normalização terminológica, sumarização, detecção de vieses linguísticos (ex.: cobertura desigual entre populações).
+## Observações Finais
+Esta fase do projeto tem como objetivo **construir a base de dados para o CardioIA**, garantindo relevância clínica e diversidade nos dados.  
+Os datasets foram preparados considerando princípios de **Governança de Dados**, permitindo uso futuro em algoritmos de IA com consistência e qualidade.
+
+## Organização do Repositório
+
+CardioIA/
+│
+├─ assets/
+│ ├─ images/xray/ # 100 imagens de raio-X
+│ └─ docs/ # textos .txt
+│
+├─ cardioIA_fase1_dados_numericos.csv
+├─ cardioIA_fase1_dicionario_dados.csv
+└─ README.md
 
 
-- **Visuais (VC)**: **hospedadas externamente** (Drive/OneDrive) – **≥ 100 imagens do mesmo tipo** (ex.: ECGs)
-- **Link público**: [link público Drive/OneDrive]
-- **Como explorar (VC)**: detecção de padrões, anomalias, segmentação/realce de bordas, classificação supervisionada, autoencoders para detecção de outliers.
-
-
-## 3) Governança de Dados, Viés e Ética
-- **Origem e licenças**: declarar claramente as fontes. Usar somente dados com **licenças permissivas** (ou gerados por nós).
-- **Privacidade**: nenhum dado pessoal identificável; dados numéricos são **sintéticos**.
-- **Viés**: monitorar distribuição (idade, sexo etc.), evitar representações desbalanceadas que prejudiquem performance/justiça de modelos.
-- **Rastreabilidade**: scripts versionados em `scripts/`; outputs versionados em `data/`.
-
-
-## 4) Reprodutibilidade
-- Python 3.10+
-- Gerar dataset: `python scripts/generate_numeric_dataset.py`
-- Validar dataset: `python scripts/validate_dataset.py`
-
-
-## 5) Contato
-- Equipe: [Nomes]
-- Responsáveis: [Você / Colega]
-
+---
 
 
 ## 📁 Estrutura de pastas
