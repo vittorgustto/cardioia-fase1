@@ -122,7 +122,7 @@ cardioia-fase1/
 │ ├─ generate_numeric_dataset.py
 │ └─ validate_dataset.py
 └─ assets/
-│ └─ logo-fiap.png
+│ └─ logo-fiap (1).png
 
 ---
 
