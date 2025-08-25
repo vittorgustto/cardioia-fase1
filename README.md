@@ -106,6 +106,7 @@ Os datasets foram preparados considerando princípios de **Governança de Dados*
 
 ## Organização do Repositório
 
+```
 cardioia-fase1/
 ├─ README.md
 ├─ data/
@@ -114,16 +115,14 @@ cardioia-fase1/
 │ └─ data_dictionary.md
 ├─ docs/
 │ ├─ texts/
-│ │ ├─ Análise do Conceito de Risco Cardiovascular.txt
-│ │ └─ Importância da Educação Para Prevenção Cardiovascular.txt
-│ └─ governance/
-│ └─ data_governance_notes.md
+│ │ ├─ Análise_do_Conceito_de_Risco_Cardiovascular.txt
+│ │ └─ Importância_da_Educação_Para_Prevenção_Cardiovascular.txt
 ├─ scripts/
 │ ├─ generate_numeric_dataset.py
 │ └─ validate_dataset.py
 └─ assets/
 │ └─ logo-fiap (1).png
-
+```
 ---
 
 
@@ -137,7 +136,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 
 - <b>config</b>: Posicione aqui arquivos de configuração que são usados para definir parâmetros e ajustes do projeto.
 
-- <b>document</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
+- <b>docs</b>: aqui estão todos os documentos do projeto que as atividades poderão pedir. Na subpasta "other", adicione documentos complementares e menos importantes.
 
 - <b>scripts</b>: Posicione aqui scripts auxiliares para tarefas específicas do seu projeto. Exemplo: deploy, migrações de banco de dados, backups.
 
