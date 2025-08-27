@@ -14,9 +14,6 @@
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/vittor-augusto/">Vitor Augusto Gomes</a>
 - <a href="https://www.linkedin.com/company/inova-fusca">João Vitor Lopes Beiro</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">Thyego Brandão</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Lucas Gabriel Alves Costa</a> 
-- <a href="https://www.linkedin.com/company/inova-fusca">Lucas Ferreira Hillesheim</a>
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
