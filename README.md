@@ -37,14 +37,19 @@ Nesta primeira fase, coletamos, organizamos e preparamos **três tipos de dados 
 - `cardioIA_fase1_dicionario_dados.csv` → descrição e significado das variáveis.
 
 ### Fonte
-Os dados foram **simulados** com base em parâmetros clínicos comuns, incluindo: idade, sexo, pressão arterial, colesterol, histórico de doenças cardíacas, frequência cardíaca, entre outros.
+Os dados foram **simulados** com base em parâmetros clínicos comuns e realistas refletindo medidas comuns em exames e avaliações médicas de rotina, incluindo: idade, sexo, pressão arterial, colesterol, histórico de doenças cardíacas, frequência cardíaca, entre outros. O dataset é composto por variáveis demográficas, laboratoriais e clínicas que podem auxiliar na análise de risco cardiovascular.
 
 ### Variáveis Relevantes
-Algumas das variáveis mais importantes para análises de IA:
-- `age_years` → idade influencia risco cardíaco.
-- `systolic_bp_mmHg` e `diastolic_bp_mmHg` → pressão arterial.
-- `cholesterol` e frações (`HDL`, `LDL`) → perfil lipídico.
-- `heart_disease` → variável alvo para classificação.
+As variáveis a seguir foram destacadas por sua importância no contexto de projetos de Inteligência Artificial aplicada à saúde:
+- Idade (anos) → fator de risco fundamental, pois a probabilidade de doenças cardiovasculares aumenta com o envelhecimento.
+- Pressão Arterial Sistólica e Diastólica (mmHg) → essenciais para identificar hipertensão, uma das principais causas de complicações cardíacas.
+- Colesterol Total, HDL e LDL (mg/dL) → indicadores diretos do perfil lipídico, amplamente utilizados para avaliar risco de aterosclerose.
+- Glicemia em Jejum (mg/dL) → importante para identificar diabetes ou pré-diabetes, condições fortemente associadas a problemas cardiovasculares.
+- Histórico Familiar (0/1) → representa predisposição genética, que aumenta significativamente o risco de eventos cardíacos.
+- Tabagismo (0/1) → hábito de alto impacto no risco de infarto e outras doenças do coração.
+
+### Justificativa
+Essas variáveis foram escolhidas por combinarem fatores de risco modificáveis (como colesterol, pressão arterial e tabagismo) e não modificáveis (como idade e histórico familiar). Essa integração é essencial para modelos de Machine Learning capazes de prever riscos e apoiar decisões médicas preventivas.
 
 ### Link
 Os dados numéricos estão na seguinte pasta:  
@@ -62,6 +67,19 @@ Os dados numéricos estão na seguinte pasta:
 
 ### Fonte
 Textos relacionados a doenças cardiovasculares, sintomas e tratamentos foram obtidos de fontes acadêmicas e literatura clássica (SciELO, BVS, Projeto Gutenberg).
+
+### Possibilidades de Exploração com NLP
+Os textos podem ser utilizados em diferentes aplicações:
+- Análise de Sentimentos: identificar percepções positivas, negativas ou neutras em narrativas sobre prevenção e tratamento cardiovascular.
+- Extração de Sintomas: localizar automaticamente menções a sintomas ou condições clínicas relevantes para suporte ao diagnóstico.
+- Classificação de Tópicos: organizar os documentos em categorias como “prevenção”, “tratamento”, “educação em saúde” e “risco cardiovascular”.
+- Resumo Automático: gerar resumos curtos de artigos e relatórios para facilitar o acesso rápido a informações importantes.
+
+### Relevância para a Saúde
+Explorar textos médicos e científicos com NLP é fundamental porque:
+- Permite mineração de conhecimento em larga escala, aproveitando documentos que seriam inviáveis de analisar manualmente.
+- Contribui para sistemas de apoio à decisão clínica, fornecendo insights adicionais a partir de literatura e registros de pacientes.
+- Facilita educação em saúde, ao estruturar informações de forma clara para profissionais e pacientes.
 
 ### Uso em IA
 - Análise de sentimentos (ex.: percepção de pacientes sobre sintomas).  
@@ -85,11 +103,21 @@ Para esta fase do projeto, utilizamos o **Heart Dataset** disponibilizado no [Me
 - Para fins do projeto, selecionamos **100 imagens** representativas do conjunto convertido, garantindo diversidade entre exames normais e patológicos.
 - Renomeadas sequencialmente de `xray_001.png` até `xray_100.png`.
 
-### Justificativa para Análise
-Essas imagens serão utilizadas para:
-- **Detecção de anomalias**: identificar alterações estruturais no coração e tórax.
+### Relevância para a Saúde
+A análise de exames de imagem por meio de algoritmos de Visão Computacional é fundamental porque:
+- Oferece **apoio ao diagnóstico precoce**, aumentando a precisão e reduzindo erros humanos.
+- Auxilia médicos no **monitoramento da evolução clínica** de pacientes.
+- Contribui para a **agilidade no atendimento**, especialmente em ambientes de alta demanda hospitalar.
+- Permite a construção de **sistemas de triagem automatizados**, ampliando o alcance da medicina preventiva.
+
+### Justificativa para Análise e Possibilidades de Exploração com Visão Computacional
+As imagens podem ser utilizadas em diferentes aplicações de Visão Computacional, como:
+- **Detecção de anomalias e padrões**: identificar alterações estruturais no coração e tórax.
 - **Classificação visual**: separar exames normais de patológicos.
 - **Treinamento de modelos de Visão Computacional**: segmentação, reconhecimento de bordas e padrões cardíacos.
+- **Identificação de Bordas e Segmentação**: separar regiões de interesse, como área cardíaca e vasos sanguíneos.
+- **Reconhecimento de Anomalias**: localizar possíveis sinais de doenças como cardiomegalia ou insuficiência cardíaca.
+- **Classificação Automática**: treinar modelos de IA para distinguir entre exames normais e exames com indícios de patologias.
 
 ### Link Público
 As 100 imagens selecionadas estão hospedadas no OneDrive para acesso público:  
