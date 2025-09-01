@@ -13,7 +13,7 @@
 
 ## 👨‍🎓 Integrantes: 
 - <a href="https://www.linkedin.com/in/vittor-augusto/">Vitor Augusto Gomes</a>
-- <a href="https://www.linkedin.com/company/inova-fusca">João Vitor Lopes Beiro</a>
+- <a href="https://www.linkedin.com/in/jo%C3%A3o-vitor-lopes-beiro-59a007248/">João Vitor Lopes Beiro</a>
 
 ## 👩‍🏫 Professores:
 ### Tutor(a) 
